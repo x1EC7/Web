@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="scripts/jquery-3.3.1.min.js"></script>
+	<script src="scripts/logout.js"></script>
+	<script src="scripts/work.js"></script>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/font.css"></link>
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css"></link>
+ <link rel="stylesheet" type="text/css" href="stylesheets/navigationBar.css"></link>
+<link type="text/css" rel="stylesheet" href="stylesheets/tables.css"></link>
+<link type="text/css" rel="stylesheet" href="stylesheets/new.css"></link>
+
+<meta charset="UTF-8">
+</head>
+<body>
+	<ul class="tab-group-style">
+		<li><a class="loginButton" href="auth.html">Log in</a></li>
+		<li><a id="logout" class="logout logoutButton" href="rest/auth/logout">Log out</a></li>
+		<li><a id="profile" class="profile" href="profile.html"></a></li>
+		<li><a id="cart" class="cart" href="cart.html">My Cart</a></li>
+	</ul>
+	
+	<ul class="tab-group">
+		<li class="tab active"><a class="click" href="#vehiclesTable">Vehicles</a></li>
+		<li class="tab"><a class="click" href="#ordersTable">Orders</a></li>
+	</ul>
+	
+	<div class="tbl-header">
+		<table id="header">
+			<thead>
+				<tr>
+					<th>Brand</th>
+					<th>Model</th>
+					<th>Licence Plate</th>
+					<th></th>
+				</tr>
+			</thead>
+			<thead hidden="true">
+				<tr>
+					<th>Articles</th>
+					<th>Take/Deliver</th>
+					<th>Cancel</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+	<div class="tbl-content">
+		<table id="vehiclesTable">
+			<tbody>
+			</tbody>
+		</table>
+		<table id="ordersTable" hidden="true">
+			<tbody>
+			</tbody>
+		</table>
+	</div>
+	
+
+</body>
+</html>

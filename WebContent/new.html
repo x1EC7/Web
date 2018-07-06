@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Add/Edit</title>
+
+<link rel="stylesheet" href="stylesheets/normalize.min.css">
+<link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" href="stylesheets/new.css">
+
+</head>
+
+<body>
+
+	<div class="form">
+		<div class="tab-content">
+			<div id="restaurant" class="topContainer">
+				<!-- RESTAURANT START -->
+
+				<form action="/" method="post">
+
+					<div class="field-wrap">
+						<label> Restaurant Name<span class="req">*</span>
+						</label> <input type="text" onkeydown="this.value = this.value.replace(';','')" required id="restaurantName"
+							autocomplete="off" />
+					</div>
+
+					<div class="field-wrap">
+						<label> Restaurant Address<span class="req">*</span>
+						</label> <input type="text" required id="restaurantAddress" onkeydown="this.value = this.value.replace(';','')"
+							autocomplete="off" />
+					</div>
+
+					<div class="field-wrap">
+						<!-- 
+			<label style="size: 5px">
+              Restaurant Category<span class="req">*</span>
+            </label>
+             -->
+						<select id="restaurantCategory">
+							<option value="DOMESTIC_KITCHEN">Domestic Kitchen</option>
+							<option value="BARBECUE">Barbecue</option>
+							<option value="CHINESE_RESTAURANT">Chinese Restaurant</option>
+							<option value="INDIAN_RESTAURANT">Indian Restaurant</option>
+							<option value="PASTRY_SHOP">Pastry Shop</option>
+							<option value="PIZZERIA">Pizzeria</option>
+						</select>
+					</div>
+
+					<button class="button button-block sendData" id="addRestaurant">Add Restaurant</button>
+
+				</form>
+
+			</div>
+			<!-- RESTAURANT END -->
+
+			<div id="vehicle" class="topContainer">
+				<!-- VEHICLE START -->
+
+				<form action="/" method="post">
+
+					<div class="field-wrap">
+						<label> Vehicle Brand<span class="req">*</span>
+						</label> <input type="text" onkeydown="this.value = this.value.replace(';','')" required id="vehicleBrand" autocomplete="off" />
+					</div>
+
+					<div class="field-wrap">
+						<label> Vehicle Model<span class="req">*</span>
+						</label> <input type="text" onkeydown="this.value = this.value.replace(';','')" required id="vehicleModel" autocomplete="off" />
+					</div>
+
+					<div class="field-wrap">
+						<label> Licence Plate<span class="req">*</span>
+						</label> <input type="text" onkeydown="this.value = this.value.replace(';','')" required id="vehiclePlate" autocomplete="off" />
+					</div>
+
+					<div class="field-wrap">
+						<label> Year of Manufacture<span class="req">*</span>
+						</label> <input type="number" min=1884 max=2018 required id="vehicleYear" onkeypress="return event.keyCode > 47 && event.keyCode < 58"
+							autocomplete="off" />
+					</div>
+
+					<div class="field-wrap">
+						<label> Note<!-- <span class="req">*</span>  -->
+						</label> <input type="text" onkeydown="this.value = this.value.replace(';','')" id="vehicleNote" autocomplete="off" />
+					</div>
+
+					<div class="field-wrap">
+						<select id="vehicleType">
+							<option value="BYCICLE">Bycicle</option>
+							<option value="SCOOTER">Scooter</option>
+							<option value="CAR">Car</option>
+						</select>
+					</div>
+
+					<button class="button button-block sendData" id="addVehicle">Add Vehicle</button>
+
+				</form>
+
+			</div>
+			<!-- VEHICLE END -->
+
+			<div id="article" class="topContainer">
+				<!-- ARTICLE START -->
+
+				<form action="/" method="post">
+
+					<div class="field-wrap">
+						<label> Article Name<span class="req">*</span>
+						</label> <input type="text" required id="articleName" onkeydown="this.value = this.value.replace(';','')" autocomplete="off" />
+					</div>
+
+					<div class="field-wrap">
+						<label> Article Description<span class="req">*</span>
+						</label> <input type="text" required id="articleDescription" onkeydown="this.value = this.value.replace(';','')"
+							autocomplete="off" />
+					</div>
+
+					<div class="field-wrap">
+						<label> Article Price<span class="req">*</span>
+						</label> <input type="number" required min="1" id="articlePrice" onkeypress="return event.keyCode > 47 && event.keyCode < 58"
+							autocomplete="off" />
+					</div>
+
+					<div class="field-wrap">
+						<label> Amount (g/ml)<span class="req">*</span>
+						</label> <input type="number" required min="1" id="articleAmount" onkeypress="return event.keyCode > 47 && event.keyCode < 58"
+							autocomplete="off" />
+					</div>
+
+					<div class="field-wrap">
+						<select id="articleRestaurant">
+						</select>
+					</div>
+
+					<div class="field-wrap">
+						<select id="articleType">
+							<option value="FOOD">Food</option>
+							<option value="DRINK">Drink</option>
+						</select>
+					</div>
+
+
+
+					<button type="submit" class="button button-block sendData"
+						id="addArticle">Add Article</button>
+
+				</form>
+
+			</div>
+			<!-- ARTICLE END -->
+
+			<div id="order" class="topContainer">
+				<!-- ORDER START -->
+
+				<form action="/" method="post">
+					
+					<div class="field-wrap">
+						<label class="active"> Receiver Username</label>
+						<select id="orderClient">
+						
+						</select>
+					</div>
+
+					<div class="field-wrap">
+						<label class="active"> Delivery Username</label>
+						<select id="orderDelivery">
+						</select>
+					</div>
+
+
+					<div class="field-wrap">
+						<label> Note
+						</label> <input type="text" id="orderNote" onkeydown="this.value = this.value.replace(';','')" autocomplete="off" />
+					</div>
+
+					<div class="field-wrap"></div>
+					<button class="button button-block sendData" id="addOrder">Add Order</button>
+
+				</form>
+
+			</div>
+			<!-- ORDER END -->
+
+			<div id="user" class="topContainer">
+				<!-- ORDER START -->
+
+				<form action="/" method="post">
+
+					<div class="field-wrap">
+						<label> Username<span class="req">*</span>
+						</label> <input type="text" required id="userUsername" onkeydown="this.value = this.value.replace(';','')" autocomplete="off" />
+					</div>
+
+					<div class="field-wrap">
+						<label> First Name<span class="req">*</span>
+						</label> <input type="text" required id="userFirstName" onkeydown="this.value = this.value.replace(';','')" autocomplete="off" />
+					</div>
+
+					<div class="field-wrap">
+						<label> Last Name<span class="req">*</span>
+						</label> <input type="text" required id="userLastName" onkeydown="this.value = this.value.replace(';','')" autocomplete="off" />
+					</div>
+
+					<div class="field-wrap">
+						<select id="userRole">
+							<option value="USER">User</option>
+							<option value="DELIVERY">Delivery</option>
+							<option value="ADMIN">Admin</option>
+						</select>
+					</div>
+					<div class="field-wrap"></div>
+					<button class="button button-block sendData" id="editUser">Edit User</button>
+
+				</form>
+
+			</div>
+
+		</div>
+		<!-- tab-content -->
+
+	</div>
+	<!-- /form -->
+</body>
+
+<!-- scripts have to be here, otherwise it doesn't work -->
+<script src='scripts/jquery-3.3.1.min.js'></script>
+<script src="scripts/new.js"></script>
+
+</html>

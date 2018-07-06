@@ -1,0 +1,3 @@
+0;admin;admin;Daniel;Nyari;ADMIN;0642376489;njari@protonmail.com;6/23/2018;5
+1;username;password;Jack;Rotson;USER;1234567890;jackrotson89@gmail.com;6/24/2018;0
+2;delivery;delivery;Lara;Matson;DELIVERY;0000000000;laramatson@gmail.com;6/25/2018;0

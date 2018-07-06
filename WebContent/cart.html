@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="scripts/jquery-3.3.1.min.js"></script>
+	<script src="scripts/logout.js"></script>
+	<script src="scripts/cart.js"></script>
+<link rel="stylesheet" type="text/css" href="stylesheets/font.css"></link>
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css"></link>
+ <link rel="stylesheet" type="text/css" href="stylesheets/navigationBar.css"></link>
+<link type="text/css" rel="stylesheet" href="stylesheets/tables.css"></link>
+<link type="text/css" rel="stylesheet" href="stylesheets/new.css"></link>
+
+<meta charset="UTF-8">
+</head>
+<body>
+	<ul class="tab-group-style">
+		<li><a class="loginButton" href="auth.html">Log in</a></li>
+		<li><a id="logout" class="logout logoutButton" href="rest/auth/logout">Log out</a></li>
+		<li><a id="profile" class="profile" href="profile.html"></a></li>
+		<li><a id="cart" class="cart" href="cart.html">My Cart</a></li>
+		<li><a id="home" class="" href="index.html">Home</a></li>
+	</ul>
+	<h1 id="priceDisplay"></h1>
+	<h1 id="pointsDisplay"></h1>
+	<div class="tbl-header">
+	<table id="header">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Price</th>
+				<th>Quantity</th>
+				<th>Remove</th>
+			</tr>
+		</thead>
+	</table>
+	</div>
+	<div class="tbl-content">
+	<table id="articlesTable">
+		<tbody>
+		</tbody>
+	</table>
+	</div>
+		
+<div class='ilb'></div>
+<div id="rangeDiv" class='ilb' style="float: left">
+</div>
+<div id="noteDiv" class='ilb' style="float: left">
+</div>
+<div id="buttonDiv" class='ilb' style="float: right">
+</div>		
+</body>
+</html>

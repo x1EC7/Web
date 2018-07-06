@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="scripts/jquery-3.3.1.min.js"></script>
+	<script src="scripts/index.js"></script>
+	<script src="scripts/logout.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="stylesheets/font.css"></link>
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css"></link>
+	<link rel="stylesheet" type="text/css" href="stylesheets/navigationBar.css"></link>
+	<link type="text/css" rel="stylesheet" href="stylesheets/tables.css"></link>
+	<link type="text/css" rel="stylesheet" href="stylesheets/new.css"></link>
+
+<meta charset="UTF-8">
+</head>
+<body>
+	<ul class="tab-group-style">
+		<li><a class="loginButton" href="auth.html">Log in</a></li>
+		<li><a id="logout" class="logout logoutButton" href="rest/auth/logout">Log out</a></li>
+		<li><a id="profile" class="profile" href="profile.html"></a></li>
+		<li><a id="cart" class="cart" href="cart.html">My Cart</a></li>
+	</ul>
+
+	<h1 id="title">Restaurants</h1>
+	<ul class="tab-group">
+		<li class="tab active"><a class="click" href="#restaurantsTable" style="width: 25%">Restaurants</a></li>
+		<li class="tab"><a class="click" href="#articlesTable" style="width: 25%">Articles</a></li>
+		<li class="tab"><a class="click" href="#foodTable" style="width: 25%">Top 10 Food</a></li>
+		<li class="tab"><a class="click" href="#drinksTable" style="width: 25%">Top 10 Drink</a></li>
+
+	</ul>
+	
+	<div class="filter">
+		<div id="restaurantFilter" class="topFilter">
+			<div class='ilb' >
+				<input type="text" id="restaurantNameFilter" placeholder="Name">
+			</div>
+			<div class='ilb'>
+				<input type="text" id="restaurantAddressFilter" placeholder="Address">
+			</div>
+			<div class='ilb'>
+				<select id="restaurantCategoryFilter">
+					<option value="DOMESTIC_KITCHEN">Domestic Kitchen</option>
+					<option value="BARBECUE">Barbecue</option>
+					<option value="CHINESE_RESTAURANT">Chinese Restaurant</option>
+					<option value="INDIAN_RESTAURANT">Indian Restaurant</option>
+					<option value="PASTRY_SHOP">Pastry Shop</option>
+					<option value="PIZZERIA">Pizzeria</option>
+				</select>
+			</div>
+			<div class='ilb'>
+				<button id="rFilter" class="button button-block filter">Filter</button>
+			</div>
+		</div>
+		<div id="articleFilter" class="topFilter" style="display:none">
+			<div class="ilb">
+				<input type="text" id="articleNameFilter" placeholder="Name">
+			</div>
+			<div class="ilb">
+				<select id="articleTypeFilter">
+					<option value="FOOD">Food</option>
+					<option value="DRINK">Drink</option>
+				</select>
+			</div>
+			<div class="ilb">
+				<select id="restaurantIdFilter">
+				</select>
+			</div>
+			<div class="ilb" style="width: 10%">
+				<input type="number" id="minPrice" placeholder="Min">
+			</div>
+			<div class="ilb" style="width: 10%">
+				<input type="number" id="maxPrice" placeholder="Max">
+			</div>
+			<div class='ilb'>
+				<button id="aFilter" class="button button-block filter">Filter</button>
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="tbl-header">
+		<table id="header">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Address</th>
+					<th>Category</th>
+					<th>Visit</th>
+				</tr>
+			</thead>
+			<thead hidden="">
+				<tr>
+					<th>Name</th>
+					<th>Type</th>
+					<th>Amount</th>
+					<th>Price</th>
+					<th>Order</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+	<div class="tbl-content">
+		<table id="restaurantsTable">
+			<tbody>
+			</tbody>
+		</table>
+		<table hidden="" id="articlesTable">
+			<tbody>
+			</tbody>
+		</table>
+		<table hidden="" id="foodTable">
+			<tbody>
+			</tbody>
+		</table>
+		<table hidden="" id="drinkTable">
+			<tbody>
+			</tbody>
+		</table>
+
+	</div>
+</body>
+</html>

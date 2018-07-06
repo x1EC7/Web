@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="scripts/jquery-3.3.1.min.js"></script>
+	<script src="scripts/profile.js"></script>
+	<script src="scripts/logout.js"></script>
+		
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css"></link>
+	<link type="text/css" rel="stylesheet" href="stylesheets/profile.css"></link>
+	<link type="text/css" rel="stylesheet" href="stylesheets/tables.css"></link>
+	<link type="text/css" rel="stylesheet" href="stylesheets/navigationBar.css"></link>
+</head>
+<body>
+	<ul class="tab-group-style">
+		<li><a id="logout" class="logout logoutButton" href="rest/auth/logout">Log out</a></li>
+		<li><a id="home" class="" href="index.html">Home</a></li>
+	</ul>
+
+<div class="card">
+	<h1 id="name"></h1>
+	<p class="title"></p>
+	<p id="points"></p>
+	<p id="email"></p>
+	<p id="phoneNo"></p>
+	<p id="date"></p>
+</div>
+
+<ul class="tab-group">
+	<li class="tab active"><a class="click" href="favouriteRestaurants">Favourite Restaurants</a></li>
+	<li class="tab"><a class="click" href="pastOrders">Past Orders</a></li>
+</ul>
+	<div class="tbl-header">
+		<table id="header">
+			<thead>
+				<tr>
+				<th>Restaurant Name</th>
+				<th>Address</th>
+				</tr>
+			</thead>
+			<thead hidden="true">
+				<tr>
+				<th>Articles</th>
+				<th>Time</th>
+				<th>Price</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+	<div class="tbl-content">
+		<table id="restaurantsTable">
+			<tbody>
+			</tbody>
+		</table>
+		<table hidden="true" id="ordersTable">
+			<tbody>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

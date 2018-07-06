@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="scripts/jquery-3.3.1.min.js"></script>
+	<script src="scripts/logout.js"></script>
+	<script src="scripts/admin.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css"></link>
+	<link type="text/css" rel="stylesheet" href="stylesheets/tables.css"></link>
+	<link type="text/css" rel="stylesheet" href="stylesheets/navigationBar.css"></link>
+</head>
+<body>
+	<ul class="tab-group-style">
+		<li><a id="logout" class="logout logoutButton" href="rest/auth/logout">Log out</a></li>
+		<li><a id="home" class="" href="index.html">Home</a></li>
+	</ul>
+	
+	<ul class="tab-group">
+		<li class="tab active"><a class="click" href="restaurantsTable" style="width: 20%">Restaurants</a></li>
+		<li class="tab"><a class="click" href="articlesTable" style="width: 20%">Articles</a></li>
+		<li class="tab"><a class="click" href="vehiclesTable" style="width: 20%">Vehicles</a></li>
+		<li class="tab"><a class="click" href="ordersTable" style="width: 20%">Orders</a></li>
+		<li class="tab"><a class="click" href="usersTable" style="width: 20%">Users</a></li>
+	</ul>	
+	
+	<ul class="tab-group">
+		<li><a id="addRestaurant" class="addEntity" target="_blank" href="restaurant" style="width: 25%">Add Restaurant</a></li>
+		<li><a id="addArticle" class="addEntity" target="_blank" href="article" style="width: 25%">Add Article</a></li>
+		<li><a id="addVehicle" class="addEntity" target="_blank" href="vehicle" style="width: 25%">Add Vehicle</a></li>
+		<li><a id="addOrder" class="addEntity" target="_blank" href="order" style="width: 25%">Add Order</a></li>
+	</ul>
+	
+		<div class="tbl-header">
+		<table id="header">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Edit</th>
+					<th>Delete</th>
+				</tr>
+			</thead>
+			<thead hidden="true">
+				<tr>
+					<th>Name</th>
+					<th>Edit</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+	<div class="tbl-content">
+		<table id="restaurantsTable">
+			<tbody>
+			</tbody>
+		</table>
+		<table hidden="" id="articlesTable">
+			<tbody>
+			</tbody>
+		</table>
+		<table hidden="" id="vehiclesTable">
+			<tbody>
+			</tbody>
+		</table>
+		<table hidden="" id="usersTable">
+			<tbody>
+			</tbody>
+		</table>
+		<table hidden="" id="ordersTable">
+			<tbody>
+			</tbody>
+		</table>
+	</div>	
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+0;0;0;FoodName1;199;ArticleDescription;500;FOOD;false
+1;6;0;DrinkName1;149;DrinkDescription;250;DRINK;false
+2;0;0;DrinkName2;179;DrinkDescription;300;DRINK;true
+3;2;0;FoodName2;249;DrinkDescription;400;FOOD;false
+4;3;0;FoodName3;349;DrinkDescription;300;FOOD;false
+5;2;0;DrinkName3;199;DrinkDescription;150;DRINK;false

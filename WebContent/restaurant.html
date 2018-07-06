@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="scripts/jquery-3.3.1.min.js"></script>
+	<script src="scripts/logout.js"></script>
+	<script src="scripts/restaurant.js"></script>
+	
+	<link type="text/css" rel="stylesheet" href="stylesheets/font.css"></link>
+	<link type="text/css" rel="stylesheet" href="stylesheets/style.css"></link>
+	<link type="text/css" rel="stylesheet" href="stylesheets/tables.css"></link>
+	<link type="text/css" rel="stylesheet" href="stylesheets/navigationBar.css"></link>
+	<link type="text/css" rel="stylesheet" href="stylesheets/new.css"></link>
+	<link type="text/css" rel="stylesheet" href="stylesheets/profile.css"></link>
+	
+</head>
+<body>
+	<ul class="tab-group-style">
+		<li><a class="loginButton" href="auth.html">Log in</a></li>
+		<li><a id="logout" class="logout logoutButton" href="rest/auth/logout">Log out</a></li>
+		<li><a id="profile" class="profile" href="profile.html"></a></li>
+		<li><a id="cart" class="cart" href="cart.html">My Cart</a></li>
+		<li><a id="home" class="" href="index.html">Home</a></li>
+	</ul>
+
+
+<div class="card">
+	<h1 id="name"></h1>
+	<p class="title"></p>
+	<p id="address"></p>
+	<p><button id="favButton"></button></p>
+</div>
+
+<div class="tbl-header">
+	<table id="header">
+		<thead>
+			<tr>
+				<th>Article Name</th>
+				<th>Type</th>
+				<th>Amount</th>
+				<th>Price</th>
+				<th>Order</th>
+			</tr>
+		</thead>
+	</table>
+</div>
+<div class="tbl-content">
+	<table id="articlesTable">
+		<tbody>
+		</tbody>
+	</table>
+</div>
+
+</body>
+</html>

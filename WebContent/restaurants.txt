@@ -1,0 +1,10 @@
+0;Restaurant0Name;Restaurant0Address;PIZZERIA;true
+1;Restaurant1Name;Restaurant1Address;BARBECUE;false
+2;Restaurant2Name;Restaurant2Address;CHINESE_RESTAURANT;false
+3;Restaurant3Name;Restaurant3Address;INDIAN_RESTAURANT;false
+4;Restaurant4Name;Restaurant4Address;DOMESTIC_KITCHEN;false
+5;Restaurant5Name;Restaurant5Address;PASTRY_SHOP;false
+6;Restaurant6Name;Restaurant6Address;PIZZERIA;false
+7;Restaurant7Name;Restaurant7Address;CHINESE_RESTAURANT;true
+8;Restaurant8Name;Restaurant8Address;PIZZERIA;false
+9;Restaurant9Name;Restaurant9Address;PASTRY_SHOP;false

@@ -1,0 +1,7 @@
+0;Audi;A8;CAR;NS000LP;2010;false;no notes at the moment;-1;false
+1;Mercedes;Benz;CAR;KG000LP;2010;false;no notes at the moment;-1;true
+2;Porsche;911;CAR;BG000LP;2010;false;no notes at the moment;-1;false
+3;Lamborghini;Gallardo;CAR;RU000LP;2010;false;no notes at the moment;-1;false
+4;Kia;Stonic;CAR;SU000LP;2010;false;no notes at the moment;-1;false
+5;Daewoo;Nubira;CAR;ZR000LP;2010;false;no notes at the moment;-1;false
+6;Dodge;Viper;CAR;NI000LP;2010;false;no notes at the moment;-1;false
